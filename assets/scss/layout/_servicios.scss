@@ -1,0 +1,29 @@
+/*===== Servicios =====*/
+.services{
+    &__data{
+        padding: 3rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        text-align: center;
+        transition: .4s;
+        box-shadow: 0 4px 6px rgba(174,190,205,.3);
+    }
+    &__icon,
+    &__title{
+        margin-bottom: var(--mb-2);
+        color: var(--first-color);
+    }
+    &__icon{
+        font-size: 5rem;
+    }
+    &__title{
+        font-size: var(--h3-font-size);
+    }
+    &__description{
+        margin-bottom: var(--mb-4);
+    }
+    &__data:hover{
+        transform: translateY(-.5rem);
+        box-shadow: 0 6px 8px rgba(174,190,205,.4);
+    }
+}

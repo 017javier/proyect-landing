@@ -1,0 +1,29 @@
+/*BUTTONS*/
+.button{
+    display: inline-block;
+    background: linear-gradient(180deg,#5059af 0%, #19216d 80%);
+    color: var(--first-color-lighten);
+    font-size: 1.7rem;
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    transition: .3s;
+}
+.button:hover{
+    background-color: var(--first-color-dark);
+}
+
+.button-light{
+    color: var(--first-color-lighten);
+}
+.button-white{
+    color: var(--first-color-lighten);
+}
+.button-white:hover{
+    background-color: var(--first-color-lighten);
+}
+.button-link{
+    color: var(--first-color-lighten);
+}
+.button-link:hover{
+    background: none;
+}

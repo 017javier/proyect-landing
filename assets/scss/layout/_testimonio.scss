@@ -1,0 +1,37 @@
+
+
+.testimonial{
+    &__content{
+        display: grid;
+        background: linear-gradient(180deg,#5059af 0%, #19216d 80%);
+        color: var(--first-color-lighten);
+        
+        border-radius: .5rem;
+        padding: 2rem 1rem;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(47,10,13,.25);
+    }
+    &__img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        justify-self: center;
+        margin-bottom: var(--mb-1);
+    }
+    &__title{
+        font-weight: 400;
+    }
+    &__client{
+        font-size: var(--small-font-size);
+        color: var(--first-color-lighten);
+        margin-bottom: var(--mb-2);
+    }
+}
+
+
+.swiper-pagination{
+    position: initial;
+}
+.swiper-pagination-bullet-active{
+    background-color:var(--first-color) ;
+}

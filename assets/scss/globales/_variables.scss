@@ -1,0 +1,41 @@
+/*===== VARIABLES CSS =====*/
+:root{
+    --header-height: 3rem;
+
+    /*===== Colors =====*/
+    
+    --first-color: #242F9B;
+    --first-color-dark: #646FD4;
+    --text-color: #636363;
+    --first-color-light: #DBDFFD;
+    --first-color-lighten: #FBF9F9;
+
+    /*===== Font and typography =====*/
+    --body-font-title: 'Abril Fatface', cursive;
+    --body-font-p: 'Lato', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 3.5rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 2.125rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1.9rem;
+    --smaller-font-size: 1.4rem;
+
+    /*===== Font weight =====*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*===== Margenes =====*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*===== z index =====*/
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}

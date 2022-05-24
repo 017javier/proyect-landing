@@ -1,0 +1,47 @@
+/*===== Portafolio =====*/
+
+.portfolio{
+    &__nav{
+        text-align: center;
+        margin-bottom: var(--mb-3);
+    }
+    &__item{
+        margin: 0 var(--mb-2);
+        cursor: pointer;
+    }
+    &__content{
+        background-color: #fff;
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: 0 4px 6ox rgba(174,190,205,.3);
+    }
+    &__img{
+        width: 100%;
+        transition: .4s;
+    }
+    &__data{
+        padding: 1.5rem;
+    }
+    &__subtitle{
+        font-size: var(--small-font-size);
+        color: var(--first-color-dark);
+    }
+    &__title{
+        font-size: var(--h3-font-size);
+        color: var(--first-color);
+    }
+    &__content:hover{
+        box-shadow: 0 6px 8px rgba(174,190,205,.4);
+    }
+    &__content:hover .portfolio__img{
+        transform: scale(1.02);
+    }
+}
+
+
+
+/* Active menu portafolio*/
+.active-portfolio{
+    color: var(--first-color-dark);
+    font-weight: var(--font-semi-bold);
+}

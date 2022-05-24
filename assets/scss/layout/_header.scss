@@ -1,0 +1,111 @@
+@use '../fuentes' as *;
+/*===== NAV =====*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item{
+        margin-bottom: var(--mb-3);
+    }
+    
+    &__link{
+        color: var(--first-color-lighten);
+        transition: .3s;
+    }
+    &__link:hover{
+        color: var(--first-color-light);
+    }
+    &__logo{
+        font-family: $body-font-title;
+        font-size: 1.4rem;
+    }
+    &__logo, &__toggle{
+        color:var(--first-color-lighten) ;
+    }
+    
+    &__toggle{
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .nav__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding-top: 1.5rem;
+        text-align: center;
+        background-color: var(--first-color);
+        transition: .4s;
+        box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+/* Show menu */
+.show-menu{
+    top:var(--header-height)
+}
+
+/* Active menu */
+.active-link{
+    position: relative;
+}
+
+.active-link::after{
+    content: '';
+    position: absolute;
+    bottom: -.7rem;
+    left: 0;
+    width: 65%;
+    height: 3px;
+    background-color: var(--first-color-light);
+}
+
+/* Change background header */
+.scroll-header{
+    background-color: var(--first-color-lighten);
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle,
+.scroll-header .nav__link{
+    color: var(--first-color-dark);
+}
+.scroll-header .nav__menu{
+    background-color: var(--first-color-lighten);
+}
+
+
+/*===== SCROLL TOP =====*/
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background-color: rgba(123,111,113,.7);
+    border-radius: .5rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop:hover{
+    background-color: var(--first-color);
+}
+.scrolltop__icon{
+    font-size: 2rem;
+    color: var(--first-color-lighten);
+}
+
+/* Show scroll top */
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+}

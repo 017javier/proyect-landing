@@ -1,0 +1,36 @@
+/*===== educacion =====*/
+.education{
+    
+    &__container{
+        row-gap: 2.5rem;
+    }
+    &__title{
+        font-size: var(--h3-font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-2);
+        display: flex;
+        align-items: center;
+    }
+    &__title-icon{
+        font-size: 1.5rem;
+        margin-right: var(--mb-1);
+    }
+    &__box{
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+    &__area{
+        font-size: var(--normal-font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-1);
+        font-weight: var(--font-medium);
+    }
+    &__icon,
+    &__work{
+        font-size: var(--smaller-font-size);
+    }
+    &__work{
+        display: block;
+    }
+}
+

@@ -1,0 +1,21 @@
+
+.about{
+    &__data{
+        text-align: center;
+    }
+    &__descreption span{
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--first-color);
+    }
+    &__number{
+        font-size: var(--h1-font-size);
+        color: var(--first-color);
+        display: block;
+    }
+    &__img{
+        justify-self: center;
+        width: 220px;
+        border-radius: .5rem;
+    }
+}
